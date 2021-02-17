@@ -52,12 +52,12 @@
                     <navigationItem key="navigationItem" title="Tasks List" id="ukY-bS-kx4">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="i9m-J1-fHG">
                             <connections>
-                                <action selector="editItemTapped:" destination="ba3-Ez-8dP" id="K2n-pS-wjO"/>
+                                <action selector="editItemTapped:" destination="ba3-Ez-8dP" id="XWR-NW-A83"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ydx-Fd-vmL">
                             <connections>
-                                <action selector="addNewItemTapped:" destination="ba3-Ez-8dP" id="ViY-C4-pOO"/>
+                                <action selector="addItemTapped:" destination="ba3-Ez-8dP" id="xf5-S4-A12"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -107,8 +107,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="fGb-bH-QAC">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="8L0-Ie-hlm"/>
-                            <barButtonItem systemItem="edit" id="UMr-1j-Qq8"/>
+                            <barButtonItem systemItem="add" id="8L0-Ie-hlm">
+                                <connections>
+                                    <action selector="addNewItemTapped:" destination="teV-lj-odG" id="Rld-5y-F6d"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="edit" id="UMr-1j-Qq8">
+                                <connections>
+                                    <action selector="editItemTapped:" destination="teV-lj-odG" id="pgM-wl-3OH"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
